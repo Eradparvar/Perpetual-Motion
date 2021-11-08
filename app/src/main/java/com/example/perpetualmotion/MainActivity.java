@@ -34,7 +34,7 @@ Toolbar  toolbar = findViewById(R.id.toolbar);
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
