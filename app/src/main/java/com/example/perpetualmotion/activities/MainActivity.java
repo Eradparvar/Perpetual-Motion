@@ -1,4 +1,4 @@
-package com.example.perpetualmotion;
+package com.example.perpetualmotion.activities;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,11 +8,12 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.perpetualmotion.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,11 +47,22 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
 
+    public void undoLastMove(MenuItem item) {
+    }
+
+    public void startNewGame(MenuItem item) {
+    }
+
+    public void turn_action_discard(View view) {
+    }
+
+    public void turn_action_deal(View view) {
+    }
 }
