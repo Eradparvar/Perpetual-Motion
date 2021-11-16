@@ -9,5 +9,5 @@
     <color name="coloredBackgroundColor">@color/primaryDarkColor</color>
 
     <!-- Used for Splash Screen background, and elsewhere as needed -->
-    <color name="defaultBackgroundColor">@android:color/background_dark</color>
+    <color name="defaultBackgroundColor">@android:color/darker_gray</color>
 </resources>
