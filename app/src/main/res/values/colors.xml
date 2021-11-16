@@ -17,5 +17,6 @@
     <color name="coloredBackgroundColor">@color/primaryLightColor</color>
 
     <!-- Used for Splash Screen background, and elsewhere as needed -->
-    <color name="defaultBackgroundColor">@android:color/background_light</color>colors.xml
+    <color name="defaultBackgroundColor">@color/cardview_light_background</color>colors.xml
+    <color name="innerCardBakgroundColor">@color/defaultBackgroundColor</color>
 </resources>
