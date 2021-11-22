@@ -6,8 +6,11 @@ import androidx.appcompat.app.AppCompatDelegate;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import androidx.preference.PreferenceManager;
 
 import com.example.perpetualmotion.R;
+
+import java.util.Set;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -20,8 +23,8 @@ public class SplashActivity extends AppCompatActivity {
                 ? AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY
                 : AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 
-        // Set the default values for auto-save and show error to the boolean values in pref xml
-        // PreferenceManager.setDefaultValues(getApplicationContext(), R.xml.root_preferences, true);
+//         Set the default values for auto-save and show error to the boolean values in pref xml
+        PreferenceManager.setDefaultValues(getApplicationContext(), "PREFS", MODE_PRIVATE, R.xml.root_preferences, false);
 
         startActivity (new Intent(getApplicationContext (), MainActivity.class));
         finish ();
