@@ -31,7 +31,6 @@ import com.mintedtech.perpetual_motion.pm_game.Card;
 import com.mintedtech.perpetual_motion.pm_game.PMGame;
 
 import java.util.EmptyStackException;
-
 public class MainActivity extends AppCompatActivity {
     // Game (current game) object
     private PMGame mCurrentGame;
@@ -111,7 +110,9 @@ public class MainActivity extends AppCompatActivity {
         final boolean[] checkedPiles = mAdapter.getCheckedPiles();
         if (mPrefUseAutoSave) {
             saveGameBoardAndChecksToSP(editor, checkedPiles);
-        } else {
+        }
+        else
+        {
             removeGameBoardAndChecksFromSP(editor, checkedPiles);
         }
     }
@@ -544,7 +545,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method handles the user's choice to deal one card to each stack (i.e. new top of each)     *
-     *
      * @param view this is the calling Object (e.g. button): irrelevant to us so we ignore it
      */
     public void turn_action_deal(@SuppressWarnings("UnusedParameters") View view) {
@@ -570,7 +570,6 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * This method handles the user's choice to deal one card to each stack (i.e. new top of each)     *
-     *
      * @param view this is the calling Object (e.g. button): irrelevant to us so we ignore it
      */
     public void turn_action_undo(View view) {
