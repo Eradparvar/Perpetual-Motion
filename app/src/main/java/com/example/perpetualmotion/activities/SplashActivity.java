@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
                 : AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 
 //         Set the default values for auto-save and show error to the boolean values in pref xml
-        PreferenceManager.setDefaultValues(getApplicationContext(), "PREFS", MODE_PRIVATE, R.xml.root_preferences, false);
+        PreferenceManager.setDefaultValues(getApplicationContext(), "PREFS", MODE_PRIVATE, R.xml.root_preferences, true);
 
         startActivity (new Intent(getApplicationContext (), MainActivity.class));
         finish ();
